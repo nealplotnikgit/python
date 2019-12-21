@@ -1,10 +1,12 @@
 from flask import Flask
 import os
+import nltk
+
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-        return "Hello World! Python"
+        return "Hello World! Python! NLTK!"
 
 if __name__ == "__main__":
   port = int(os.getenv("PORT", 8080))
